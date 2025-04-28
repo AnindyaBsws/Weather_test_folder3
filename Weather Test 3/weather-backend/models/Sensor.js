@@ -7,7 +7,7 @@ const sensorSchema = new mongoose.Schema({
   rain: Number,
   moisture: Number,
   pressure: Number,
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now() }
 });
 
 const Sensor = mongoose.model('Sensor', sensorSchema);
